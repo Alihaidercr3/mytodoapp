@@ -168,7 +168,7 @@ const Todos = () => {
               </h1>
             </header>
             {contextHolder}
-            {!isProcessing ? <div>
+             <div>
               {!isLoading ? (
                 <Table
                   columns={columns}
@@ -253,17 +253,7 @@ const Todos = () => {
                     </button>
                   </div>
                 </Form>
-              </Modal></div> : <div className="flex justify-center items-center w-full h-[300px]">
-              {" "}
-              <Spin
-                indicator={<LoadingOutlined style={{ fontSize: 48 }} spin />}
-              />
-            </div>
-
-            }
-
-
-
+              </Modal></div> 
           </div>
         </div>
       </div>
