@@ -251,7 +251,7 @@ const Todos = () => {
                     </button>
                   </div>
                 </Form>
-              </Modal></div> 
+              </Modal></div>.
           </div>
         </div>
       </div>
