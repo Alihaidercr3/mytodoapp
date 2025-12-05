@@ -15,7 +15,6 @@ const Todos = () => {
   const { user } = useContext(AuthContext);
   const [documents, setDocuments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isProcessing, setIsProccesing] = useState(true);
   const [isProcessingDelete, setIsProccesingDelete] = useState(false);
   const [currentpage, setCurrentPage] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -70,7 +69,7 @@ const Todos = () => {
   // Save changes
   const handleSave = async () => {
     try {
-      setIsProccesing(true);
+      setIsModalOpen(false)
       const todoRef = doc(firestore, "todos", editingTodo.id);
       await updateDoc(todoRef, editForm);
 
@@ -80,13 +79,11 @@ const Todos = () => {
       );
 
       messageApi.success("Todo updated successfully");
-      setIsProccesing(false);
-      setIsModalOpen(false);
       setEditingTodo(null);
     } catch (error) {
       console.error(error);
       messageApi.error("Failed to update todo");
-      setIsProccesing(false)
+    
     }
   };
 
@@ -167,7 +164,7 @@ const Todos = () => {
                 My Todos
               </h1>
             </header>
-            {contextHolder}
+  {contextHolder}
              <div>
               {!isLoading ? (
                 <Table
@@ -183,6 +180,7 @@ const Todos = () => {
                     onChange: (page) => setCurrentPage(page),
                   }}
                 />
+               
               ) : (
                 <div className="flex justify-center items-center w-full h-[300px]">
                   {" "}
