@@ -99,7 +99,7 @@ createDocument(formData)
               disabled={isProcessing}
               className="ml-1.5 mt-2 w-60 px-3 py-2 rounded-lg text-white text-sm font-semibold transition duration-300 ease-out transform 
                      bg-linear-to-br from-gray-600 to-gray-800 shadow-md shadow-gray-600/50 
-                     hover:scale-[1.05] hover:shadow-lg hover:from-gray-700 hover:to-gray-900 active:scale-[0.98] focus:ring-2 focus:ring-gray-700">
+                     hover:scale-[1.05] hover:shadow-xl hover:from-gray-700 hover:to-gray-900 active:scale-[0.98] focus:ring-2 focus:ring-gray-700">
               {!isProcessing ? "Add Todo" :<Spin />}</button>
           </Card>
         </div>
