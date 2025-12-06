@@ -68,7 +68,7 @@ createDocument(formData)
               type="text"
               id="Name"
               name="name"
-              className="w-full px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+              className="w-full transform motion-safe:focus:scale-110   px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
               placeholder="Enter Name"
               required
               onChange={handleChange}
@@ -78,7 +78,7 @@ createDocument(formData)
               type="text"
               id="hobby"
               name="hobby"
-              className="w-full px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+              className="w-full transform motion-safe:focus:scale-110  px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
               placeholder="hobby"
               required
               value={state.hobby}
@@ -89,7 +89,7 @@ createDocument(formData)
               type="text"
               id="location"
               required
-              className="w-full px-4 py-3 mt-2 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+              className="w-full transform motion-safe:focus:scale-110 px-4 py-3 mt-2 text-sm bg-white border border-gray-300 rounded-xl shadow-sm   focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
               placeholder="Enter Location"
               value={state.location}
               onChange={handleChange}

@@ -204,7 +204,7 @@ const Todos = () => {
                       value={editForm.name}
                       onChange={handleInputChange}
                       placeholder="Enter Name"
-                      className="w-full px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+                      className="w-full transform motion-safe:focus:scale-105 px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-300 hover:shadow-lg"
                     />
                   </Form.Item>
 
@@ -215,7 +215,7 @@ const Todos = () => {
                       value={editForm.location}
                       onChange={handleInputChange}
                       placeholder="Enter Location"
-                      className="w-full px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+                      className="w-full transform motion-safe:focus:scale-105 px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-300 hover:shadow-lg"
                     />
                   </Form.Item>
 
@@ -227,7 +227,7 @@ const Todos = () => {
                       value={editForm.hobby}
                       onChange={handleInputChange}
                       placeholder="Enter Hobby"
-                      className="w-full px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-200 hover:shadow-lg"
+                      className="w-full transform motion-safe:focus:scale-105 px-4 py-3 text-sm bg-white border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-grey-200 focus:border-grey-200 focus:shadow-md transition-all duration-300 hover:shadow-lg"
                     />
                   </Form.Item>
 
@@ -251,7 +251,7 @@ const Todos = () => {
                     </button>
                   </div>
                 </Form>
-              </Modal></div>.
+              </Modal></div>
           </div>
         </div>
       </div>
