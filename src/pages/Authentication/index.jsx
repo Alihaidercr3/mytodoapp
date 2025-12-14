@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Login from './login'
-import Register from './Register'
+import Login from './login.jsx'
+import Register from './Register.jsx'
 export default function index() {
   return (
     <Routes>

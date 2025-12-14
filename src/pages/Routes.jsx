@@ -14,7 +14,6 @@ const Index = () => {
         <Route path="/dashboard/*" element={isAuth?<Dashboard/>:<Navigate to="/" />}/>    
         <Route path="/authentication/*" element={!isAuth ? <Authentication /> : <Navigate to="/" />}/>
         <Route path="/*" element={<Frontend />}/>
-
       </Routes>
     </>
   );
