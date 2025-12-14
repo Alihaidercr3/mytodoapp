@@ -4,6 +4,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 export const AuthContext = createContext()
 
+
 const intialState = { isAuth: false, user: {}}
 // const reducer = ((state, action) => {
   
@@ -16,7 +17,7 @@ const intialState = { isAuth: false, user: {}}
 //       return state;
 //   }
 // })
-export default function AuthContextProvider(props) {
+export default function AuthContextProvider(props) {  
   // const [state, dispatch] = useReducer(reducer, intialState)
   const [state, dispatch] = useState(intialState)
   

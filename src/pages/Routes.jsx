@@ -4,7 +4,6 @@ import Authentication from "./Authentication";
 import Dashboard from "./Dashboard";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import Privateroute from "../assets/components/privateroute";
 
 const Index = () => {
   const { isAuth } = useContext(AuthContext);
@@ -12,12 +11,10 @@ const Index = () => {
   return (
     <>
       <Routes>
-        <Route path="/dashboard/*" element={<Privateroute Component={Dashboard} />}/>    
-         
-        
+        <Route path="/dashboard/*" element={isAuth?<Dashboard/>:<Navigate to="/" />}/>    
+        <Route path="/authentication/*" element={!isAuth ? <Authentication /> : <Navigate to="/" />}/>
         <Route path="/*" element={<Frontend />}/>
 
-        <Route path="/authentication/*" element={!isAuth ? <Authentication /> : <Navigate to="/" />}/>
       </Routes>
     </>
   );
